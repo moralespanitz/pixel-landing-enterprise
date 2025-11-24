@@ -775,12 +775,8 @@
     max-height: 400px;
   }
 
-  .max-h-full {
-    max-height: 100%;
-  }
-
-  .min-h-\[400px\] {
-    min-height: 400px;
+  .min-h-\[300px\] {
+    min-height: 300px;
   }
 
   .min-h-\[calc\(100vh-73px\)\] {
@@ -964,6 +960,10 @@
 
   .flex-col {
     flex-direction: column;
+  }
+
+  .flex-col-reverse {
+    flex-direction: column-reverse;
   }
 
   .flex-row {
@@ -1415,10 +1415,6 @@
     padding-top: calc(var(--spacing) * 12);
   }
 
-  .pt-\[80px\] {
-    padding-top: 80px;
-  }
-
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
@@ -1435,10 +1431,6 @@
     padding-right: calc(var(--spacing) * 12);
   }
 
-  .pr-\[96px\] {
-    padding-right: 96px;
-  }
-
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
@@ -1449,14 +1441,6 @@
 
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
-  }
-
-  .pb-\[80px\] {
-    padding-bottom: 80px;
-  }
-
-  .pl-\[65px\] {
-    padding-left: 65px;
   }
 
   .text-center {
@@ -1952,6 +1936,18 @@
     }
   }
 
+  @media (width >= 40rem) {
+    .sm\:min-h-\[400px\] {
+      min-height: 400px;
+    }
+  }
+
+  @media (width >= 40rem) {
+    .sm\:p-6 {
+      padding: calc(var(--spacing) * 6);
+    }
+  }
+
   @media (width >= 48rem) {
     .md\:bottom-8 {
       bottom: calc(var(--spacing) * 8);
@@ -2187,12 +2183,6 @@
   }
 
   @media (width >= 64rem) {
-    .lg\:text-\[18px\] {
-      font-size: 18px;
-    }
-  }
-
-  @media (width >= 64rem) {
     .lg\:text-\[48px\] {
       font-size: 48px;
     }
@@ -2207,6 +2197,42 @@
   @media (width >= 64rem) {
     .lg\:text-\[96px\] {
       font-size: 96px;
+    }
+  }
+
+  @media (width >= 80rem) {
+    .xl\:mb-0 {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
+
+  @media (width >= 80rem) {
+    .xl\:mb-6 {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
+
+  @media (width >= 80rem) {
+    .xl\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >= 80rem) {
+    .xl\:flex-col {
+      flex-direction: column;
+    }
+  }
+
+  @media (width >= 80rem) {
+    .xl\:gap-8 {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (width >= 80rem) {
+    .xl\:text-\[18px\] {
+      font-size: 18px;
     }
   }
 }

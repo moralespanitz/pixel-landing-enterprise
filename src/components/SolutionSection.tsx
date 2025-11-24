@@ -46,7 +46,7 @@ export default function SolutionSection() {
 
           {/* Visual Content Box */}
           <div className="mb-16">
-            <div className="bg-[#eeede6] border border-[#bebeb8] min-h-[400px] md:min-h-[519px] relative flex items-center justify-center p-8">
+            <div className="bg-[#eeede6] border border-[#bebeb8] min-h-[300px] sm:min-h-[400px] md:min-h-[519px] relative flex items-center justify-center p-4 sm:p-6 md:p-8">
               {/* Header Tag */}
               <div className="absolute top-0 left-0 bg-[#f4f3ec] border-b border-r border-[#bebeb8] px-3 py-2">
                 <p className="font-['Source_Code_Pro',monospace] text-[10px] text-[#626260]">
@@ -58,7 +58,7 @@ export default function SolutionSection() {
               <img 
                 src={solutionImage} 
                 alt="Market Intelligence Dashboard"
-                className="max-w-full max-h-full object-contain"
+                className="w-full h-auto max-w-full object-contain"
               />
             </div>
           </div>
